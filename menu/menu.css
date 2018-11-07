@@ -1,3 +1,9 @@
+@font-face {
+    font-family: AdvancedPixel;
+    src: url(../advanced_pixel-7.woff);
+}
+
+
 .navmenu {
     list-style: none;
     margin: 0;
@@ -27,7 +33,7 @@
     text-decoration: none;
     color: #ffffff;
     font-size: xx-large;
-    font-family: Verdana;
+    font-family: AdvancedPixel;
 }
 
 .navmenu #Jaanus:hover {
