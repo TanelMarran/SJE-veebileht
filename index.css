@@ -14,7 +14,7 @@ html, body {
     height: 100%;
     width: 100%;
     margin: auto;
-    background: url(https://www.designyourway.net/drb/wp-content/uploads/2017/04/Nature-Wallpaper-Desktop-Background-150-2-1600x900.jpg);
+    background: url("taust.jpg");
     display: table;
     top: 0;
     background-size: cover;
@@ -28,11 +28,11 @@ html, body {
 }
 
 .transbox {
-    box-sizing: border-box;
     background-color: #ffffff;
     opacity: 0.6;
     margin: auto;
     width: 750px;
+
 }
 
 .inner {
@@ -46,7 +46,10 @@ html, body {
 .inner h1 {
     color: black;
     text-shadow: 0 0 300px #000;
-    font-size: 300%
+    font-size: 300%;
+    horiz-align: center;
+    border: 1px solid black;
+
 }
 
 .content h2 {
