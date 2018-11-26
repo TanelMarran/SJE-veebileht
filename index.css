@@ -2,3 +2,53 @@
     font-family: AdvancedPixel;
     src: url(advanced_pixel-7.woff);
 }
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.intro {
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    background: url(https://www.designyourway.net/drb/wp-content/uploads/2017/04/Nature-Wallpaper-Desktop-Background-150-2-1600x900.jpg);
+    display: table;
+    top: 0;
+    background-size: cover;
+}
+
+.intro .inner {
+    display: table-cell;
+    width: 100%;
+    max-width: none;
+
+}
+
+.inner {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 200px;
+
+}
+
+.inner h1 {
+    color: black;
+    text-shadow: 0 0 300px #000;
+    font-size: 300%
+}
+
+.content h2 {
+    max-width: 200px;
+    display: inline-block;
+    text-shadow: 0 0 300px #000;
+    margin: 20px 90px 20px 90px;
+}
+
+a:link, a:visited {
+    color: black;
+    text-decoration: none;
+}
