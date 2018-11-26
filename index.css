@@ -27,6 +27,14 @@ html, body {
 
 }
 
+.transbox {
+    box-sizing: border-box;
+    background-color: #ffffff;
+    opacity: 0.6;
+    margin: auto;
+    width: 750px;
+}
+
 .inner {
     max-width: 1000px;
     margin: 0 auto;
