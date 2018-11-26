@@ -8,6 +8,7 @@ html, body {
     padding: 0;
     height: 100%;
     width: 100%;
+    font-family: "AdvancedPixel";
 }
 
 .intro {
@@ -23,20 +24,17 @@ html, body {
 .intro .inner {
     display: table-cell;
     width: 100%;
-    max-width: none;
 
 }
 
 .transbox {
-    background-color: #ffffff;
-    opacity: 0.6;
+    background-color: rgba(200, 200, 200, 0.6);
     margin: auto;
-    width: 750px;
+    width: 75vw;
 
 }
 
 .inner {
-    max-width: 1000px;
     margin: 0 auto;
     text-align: center;
     vertical-align: middle;
@@ -48,18 +46,64 @@ html, body {
     text-shadow: 0 0 300px #000;
     font-size: 300%;
     horiz-align: center;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 
-}
-
-.content h2 {
-    max-width: 200px;
-    display: inline-block;
-    text-shadow: 0 0 300px #000;
-    margin: 20px 90px 20px 90px;
 }
 
 a:link, a:visited {
     color: black;
     text-decoration: none;
+}
+
+.content {
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+@media screen and (min-width: 600px) {
+    .block{
+        width: 25vw;
+    }
+
+    .img > img {
+        width: 10vw;
+    }
+
+    .name {
+        height: 10vw;
+        width: 15vw;
+        font-size: 3vw;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .block {
+        width: 80vw;
+    }
+    
+    .img > img {
+        width: 30vw;
+    }
+
+    .name {
+        height: 30vw;
+        width: 75vw;
+        font-size: 10vw;
+    }
+}
+.block {
+    overflow: auto;
+    display: inline-block;
+    background-color: rgba(200, 200, 200, 0.6);
+
+}
+
+.img > img {
+    float: left;
+    border-radius: 50%
+}
+
+.name {
+    display: table-cell;
+    vertical-align: middle;
 }

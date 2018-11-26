@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Landing page</title>
     <link rel="stylesheet" type="text/css" href="index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
     <section class="intro">
@@ -12,15 +13,55 @@
             <h1>Tere tulemast meie projektilehele</h1>
             </div>
             <div class="content">
-                <h2><img src="Jaanus.png">
-                <a href="jaanus.html">JAANUS</a></h2>
-                <h2><img src="Renee.png">
-                <a href="renee.html">RENEE</a></h2>
-                <h2><img src="Tanel.png" width="150" height="150">
-                <a href="tanel.html">TANEL</a></h2>
+                    <div class="block" id="jaanus">
+                        <div class="img">
+                        <img src="Jaanus.png"></div>
+                        <div class="name"><a href="jaanus.html">JAANUS</a></div>
+                    </div>
+                    <div class="block" id="renee">
+                        <div class="img">
+                        <img src="Renee.png"></div>
+                        <div class="name"><a href="renee.html">RENEE</a></div>
+                    </div>
+                    <div class="block" id="tanel">
+                        <div class="img">
+                        <img src="Tanel.png"></div>
+                        <div class="name"><a href="tanel.html">TANEL</a></div>
+                    </div>
+
             </div>
         </div>
     </section>
+<script>
+$("#jaanus").hover(function () {
+    $(this).find("img").attr("src", "Renee.png");
+    $(this).find("a").css("color", "red");
+},
 
+function () {
+    $(this).find("img").attr("src", "Jaanus.png");
+    $(this).find("a").css("color", "black");
+});
+
+$("#renee").hover(function () {
+    $(this).find("img").attr("src", "Tanel.png");
+    $(this).find("a").css("color", "lawngreen");
+},
+
+function () {
+    $(this).find("img").attr("src", "Renee.png");
+    $(this).find("a").css("color", "black");
+});
+
+$("#tanel").hover(function () {
+    $(this).find("img").attr("src", "Jaanus.png");
+    $(this).find("a").css("color", "blue");
+},
+
+function () {
+    $(this).find("img").attr("src", "Tanel.png");
+    $(this).find("a").css("color", "black");
+});
+</script>
 </body>
 </html>

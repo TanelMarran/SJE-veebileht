@@ -1,19 +1,21 @@
 <div class="navscroll">
-    <ul class="navmenu">
+    <ul class="navmenu" style="overflow: hidden">
         <li><a id="Jaanus" href="jaanus.html">Jaanus</a></li>
-        <li><a id="Renee" href="index.html">Renee</a></li>
+        <li><a id="Renee" href="renee.html">Renee</a></li>
         <li><a id="Tanel" href="tanel.html">Tanel</a></li>
 
     </ul>
 </div>
 
 <script>
-    $(".navmenu").hide();
-
-    $('.navscroll').hover(function(){
-        $(".navmenu").stop().slideDown();
+    h = $(".navmenu:first").prop("scrollHeight");
+    // $(".navmenu").hide();
+    $(".navmenu").animate({height: h+"px"})
+    console.log(h);
+    $('.navmenu').hover(function(){
+        $(".navmenu").animate({height: h+"px"})
     }, function () {
-        $(".navmenu").stop().slideUp();
+        $(".navmenu").animate({height: h*0.15+"px"})
     })
 </script>
 

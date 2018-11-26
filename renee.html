@@ -4,14 +4,17 @@
     <meta charset="UTF-8">
     <title>Renee</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="menu/menu.css">
 
 </head>
 <body>
+    <div id="navigator"></div>
     <div class="main">
         <div>
             <h1>Renee</h1>
-            <p><i>Jack of all trades, master of some. - vanarahvas</i></p></br>
-            Rahulik Viljandimaalt pärit noormees, kellele meeldib vabal ajal tegeleda peaaegu kõigega. Kui teda ei leia koolist, tasuks teda otsida</br>
+            <p><i>Jack of all trades, master of some. - vanarahvas</i></p></br/>
+            Rahulik Viljandimaalt pärit noormees, kellele meeldib vabal ajal tegeleda peaaegu kõigega. Kui teda ei leia koolist, tasuks teda otsida<br/>
             <ul>
                 <li>bändiproovist - <a href="http://ristikheinad.eu">Õed-Vennad Ristikheinad Vähendatud Koosseisus <sub>(leidke meid Facebookist, Instagramist, Twitterist või Google+'ist)</sub></a>,</li>
                 <li>heli-, valgus- ja/või videopuldi tagant,</li>
@@ -21,5 +24,11 @@
             <img src="Renee.png" about="Selline olen mina - võta või jäta.">
         </div>
     </div>
+
+    <script>
+            $(function() {
+                $("#navigator").load("menu/menu.html")
+            })
+        </script>
 </body>
 </html>
