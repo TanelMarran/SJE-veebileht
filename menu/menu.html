@@ -21,9 +21,11 @@
             $(".navmenu").hide();
 
             $('.navscroll').hover(function(){
-                $(".navmenu").slideToggle();
+                $(".navmenu").stop().slideDown();
+                //$(".navmenu").stop().animate({"height": "57px"},200);
             }, function () {
-                $(".navmenu").slideToggle();
+                $(".navmenu").stop().slideUp();
+                //$(".navmenu").stop().animate({"height": "10px"},200);
             })
         </script>
     </body>
