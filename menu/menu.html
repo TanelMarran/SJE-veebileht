@@ -1,32 +1,31 @@
-<!DOCTYPE html>
-<html lang="en">
+<div class="navscroll">
+    <ul class="navmenu">
+        <li><a id="Jaanus" href="jaanus.html">Jaanus</a></li>
+        <li><a id="Renee" href="index.html">Renee</a></li>
+        <li><a id="Tanel" href="tanel.html">Tanel</a></li>
+    </ul>
+</div>
 
-    <head>
-        <meta charset="UTF-8">
-        <title>Menu</title>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <link rel="stylesheet" href="menu.css">
-    </head>
+<script>
+    $(".navmenu").hide();
 
-    <body>
-        <div class="navscroll">
-            <ul class="navmenu">
-                <li><a id="Jaanus" href="../index.html">Jaanus</a></li>
-                <li><a id="Renee" href="../index.html">Renee</a></li>
-                <li><a id="Tanel" href="../index.html">Tanel</a></li>
-            </ul>
-        </div>
-        <p>Loads of text <br>Loads of text <br>Loads of text <br>Loads of text <br>Loads of text <br>Loads of text <br>Loads of text <br>Loads of text <br>Loads of text <br>Loads of text <br>Loads of text <br>Loads of text <br>Loads of text <br>Loads of text <br>Loads of text <br>Loads of text <br>Loads of text <br>Loads of text <br>Loads of text <br>Loads of text <br>Loads of text <br>Loads of text <br>Loads of text <br>Loads of text <br>Loads of text <br>Loads of text <br>Loads of text <br>Loads of text <br>Loads of text <br>Loads of text <br>Loads of text <br>Loads of text <br>Loads of text <br>Loads of text <br>Loads of text <br>Loads of text <br>Loads of text <br>Loads of text <br>Loads of text <br>Loads of text <br>Loads of text <br>Loads of text <br>Loads of text <br>Loads of text <br>Loads of text <br>Loads of text <br>Loads of text <br>Loads of text <br>Loads of text <br>Loads of text <br>Loads of text <br>Loads of text <br>Loads of text <br>Loads of text <br>Loads of text <br>Loads of text <br>Loads of text <br>Loads of text <br>Loads of text <br>Loads of text <br>Loads of text <br>Loads of text <br>Loads of text <br>Loads of text <br>Loads of text <br>Loads of text <br>Loads of text <br>Loads of text <br>Loads of text <br>Loads of text <br>Loads of text <br>Loads of text <br>Loads of text <br>Loads of text <br>Loads of text <br>Loads of text <br>Loads of text <br>Loads of text <br>Loads of text <br>Loads of text <br>Loads of text <br>Loads of text <br>Loads of text <br>Loads of text <br>Loads of text <br>Loads of text <br>Loads of text <br>Loads of text <br>Loads of text <br>Loads of text <br>Loads of text <br>Loads of text <br>Loads of text <br>Loads of text <br>Loads of text <br>Loads of text <br>Loads of text <br>Loads of text <br>Loads of text <br>Loads of text <br>Loads of text <br>Loads of text <br>Loads of text <br>Loads of text <br>Loads of text <br>Loads of text <br>Loads of text <br>Loads of text <br></p>
-        <script>
-            $(".navmenu").hide();
+    $('.navscroll').hover(function(){
+        $(".navmenu").stop().slideDown();
+    }, function () {
+        $(".navmenu").stop().slideUp();
+    })
+</script>
 
-            $('.navscroll').hover(function(){
-                $(".navmenu").stop().slideDown();
-                //$(".navmenu").stop().animate({"height": "57px"},200);
-            }, function () {
-                $(".navmenu").stop().slideUp();
-                //$(".navmenu").stop().animate({"height": "10px"},200);
-            })
-        </script>
-    </body>
-</html>
+ <script>
+     var path = window.location.pathname;
+     var page = path.split("/").pop();
+     if (page === "tanel.html") {
+         $("#Tanel").css("color","blue")
+     }
+     if (page === "jaanus.html") {
+         $("#Jaanus").css("color","red")
+     }
+     if (page === "renee.html") {
+         $("#Renee").css("color","lawngreen")
+     }
+ </script>

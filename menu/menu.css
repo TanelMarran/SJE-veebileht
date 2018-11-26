@@ -1,18 +1,7 @@
-@font-face {
-    font-family: AdvancedPixel;
-    src: url(../advanced_pixel-7.woff);
-}
-
 .navscroll {
     position: fixed;
     width: 100%;
     height: 10%;
-}
-
-canvas {
-    background: #353535;
-    width: .navscroll.;
-
 }
 
 .navmenu {
@@ -72,6 +61,10 @@ canvas {
             white 20%,
             #353535 20%
     );
+}
+
+.active #Tanel {
+    color: blue;
 }
 
 .navmenu #Tanel:hover {
