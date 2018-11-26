@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <title>Jaanuse leht</title>
     <link rel="stylesheet" href="style.css">
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="menu/menu.css">
 </head>
 <body>
+    <div id="navigator"></div>
     <div class="main">
         <div>
             <h1>Tere olen jaanus</h1>
@@ -14,5 +16,11 @@
             <a href="index.html">Indeks</a>
         </div>
     </div>
+
+    <script>
+        $(function() {
+            $("#navigator").load("menu/menu.html")
+        })
+    </script>
 </body>
 </html>
