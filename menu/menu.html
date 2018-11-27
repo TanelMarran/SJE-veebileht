@@ -12,10 +12,10 @@
     // $(".navmenu").hide();
     $(".navmenu").animate({height: h+"px"})
     console.log(h);
-    $('.navmenu').hover(function(){
-        $(".navmenu").animate({height: h+"px"})
+    $('.navscroll').hover(function(){
+        $(".navmenu").stop().animate({height: h+"px"})
     }, function () {
-        $(".navmenu").animate({height: h*0.15+"px"})
+        $(".navmenu").stop().animate({height: h*0.15+"px"})
     })
 </script>
 
