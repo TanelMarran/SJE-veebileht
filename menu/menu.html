@@ -8,6 +8,20 @@
 </div>
 
 <script>
+    var path = window.location.pathname;
+    var page = path.split("/").pop();
+    if (page === "tanel.html") {
+        $("#Tanel").css({"text-decoration":"underline","text-decoration-color":"blue"});
+    }
+    if (page === "jaanus.html") {
+        $("#Jaanus").css({"text-decoration":"underline","text-decoration-color":"red"})
+    }
+    if (page === "renee.html") {
+        $("#Renee").css({"text-decoration":"underline","text-decoration-color":"lawngreen"})
+    }
+</script>
+
+<script>
     h = $(".navmenu:first").prop("scrollHeight");
     // $(".navmenu").hide();
     $(".navmenu").animate({height: h+"px"})
@@ -19,16 +33,3 @@
     })
 </script>
 
- <script>
-     var path = window.location.pathname;
-     var page = path.split("/").pop();
-     if (page === "tanel.html") {
-         $("#Tanel").css("color","blue")
-     }
-     if (page === "jaanus.html") {
-         $("#Jaanus").css("color","red")
-     }
-     if (page === "renee.html") {
-         $("#Renee").css("color","lawngreen")
-     }
- </script>

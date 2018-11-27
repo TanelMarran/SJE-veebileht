@@ -41,32 +41,32 @@
 <script>
     $("#jaanus").hover(function () {
             $(this).find("img").attr("src", "Jaanusvärv.png");
-            $(this).find("a").css("color", "red");
+            $(this).find(".name").css({"text-decoration":"underline","text-decoration-color":"red"})
         },
 
         function () {
             $(this).find("img").attr("src", "Jaanus.png");
-            $(this).find("a").css("color", "black");
+            $(this).find(".name").css("text-decoration","none")
         });
 
     $("#renee").hover(function () {
             $(this).find("img").attr("src", "Reneevärv.png");
-            $(this).find("a").css("color", "lawngreen");
+            $(this).find(".name").css({"text-decoration":"underline","text-decoration-color":"lawngreen"})
         },
 
         function () {
             $(this).find("img").attr("src", "Renee.png");
-            $(this).find("a").css("color", "black");
+            $(this).find(".name").css("text-decoration","none")
         });
 
     $("#tanel").hover(function () {
             $(this).find("img").attr("src", "Tanelvärv.png");
-            $(this).find("a").css("color", "blue");
+            $(this).find(".name").css({"text-decoration":"underline","text-decoration-color":"blue"})
         },
 
         function () {
             $(this).find("img").attr("src", "Tanel.png");
-            $(this).find("a").css("color", "black");
+            $(this).find(".name").css("text-decoration","none")
         });
 </script>
 </body>

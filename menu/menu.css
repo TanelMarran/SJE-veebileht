@@ -24,6 +24,7 @@
 .navmenu a{
     display:inline-flex;
     padding-right: 25px;
+    padding-bottom: 5px;
     padding-left: 25px;
     padding-top: 25px;
     margin-right: -5px;
@@ -55,6 +56,7 @@
 .navmenu #Renee:hover {
     background: linear-gradient(
             180deg,
+            lawngreen,
             lawngreen 15%,
             white 15%,
             white 20%,
