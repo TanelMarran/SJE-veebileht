@@ -11,20 +11,20 @@
     var path = window.location.pathname;
     var page = path.split("/").pop();
     if (page === "tanel.html") {
-        $("#Tanel").css({"text-decoration":"underline","text-decoration-color":"blue"});
+        $("#Tanel").css("background","linear-gradient(180deg,blue,blue 15%,white 15%,white 20%,#353535 20%");
     }
     if (page === "jaanus.html") {
-        $("#Jaanus").css({"text-decoration":"underline","text-decoration-color":"red"})
+        $("#Jaanus").css("background","linear-gradient(180deg,red,red 15%,white 15%,white 20%,#353535 20%");
     }
     if (page === "renee.html") {
-        $("#Renee").css({"text-decoration":"underline","text-decoration-color":"lawngreen"})
+        $("#Renee").css("background","linear-gradient(180deg,lawngreen,lawngreen 15%,white 15%,white 20%,#353535 20%");
     }
 </script>
 
 <script>
     h = $(".navmenu:first").prop("scrollHeight");
     // $(".navmenu").hide();
-    $(".navmenu").animate({height: h+"px"})
+    $(".navmenu").animate({height: h+"px"});
     console.log(h);
     $('.navscroll').hover(function(){
         $(".navmenu").stop().animate({height: h+"px"})
