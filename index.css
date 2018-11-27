@@ -30,7 +30,7 @@ html, body {
 .transbox {
     background-color: rgba(200, 200, 200, 0.6);
     margin: auto;
-    width: 75vw;
+    width: 76vw;
 
 }
 
@@ -72,7 +72,8 @@ a:link, a:visited {
     .name {
         height: 10vw;
         width: 15vw;
-        font-size: 3vw;
+        font-size: 4vw;
+        font-weight: bold;
     }
 }
 
@@ -95,12 +96,14 @@ a:link, a:visited {
     overflow: auto;
     display: inline-block;
     background-color: rgba(200, 200, 200, 0.6);
+    height: 30%;
 
 }
 
 .img > img {
     float: left;
-    border-radius: 50%
+    border-radius: 50%;
+    max-height: 10%;
 }
 
 .name {

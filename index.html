@@ -13,53 +13,59 @@
             <h1>Tere tulemast meie projektilehele</h1>
             </div>
             <div class="content">
+                <a href="jaanus.html">
                     <div class="block" id="jaanus">
                         <div class="img">
-                        <img src="Jaanus.png"></div>
-                        <div class="name"><a href="jaanus.html">JAANUS</a></div>
+                        <img src="Jaanus.jpg"></div>
+                        <div class="name">JAANUS</div>
                     </div>
+                </a>
+                <a href="renee.html">
                     <div class="block" id="renee">
                         <div class="img">
-                        <img src="Renee.png"></div>
-                        <div class="name"><a href="renee.html">RENEE</a></div>
+                        <img src="ReneeTrei.jpeg"></div>
+                        <div class="name">RENEE</div>
                     </div>
+                </a>
+                <a href="tanel.html">
                     <div class="block" id="tanel">
                         <div class="img">
-                        <img src="Tanel.png"></div>
-                        <div class="name"><a href="tanel.html">TANEL</a></div>
+                        <img src="Tanel2.jpg"></div>
+                        <div class="name">TANEL</div>
                     </div>
+                </a>
 
             </div>
         </div>
     </section>
 <script>
 $("#jaanus").hover(function () {
-    $(this).find("img").attr("src", "Renee.png");
+    $(this).find("img").attr("src", "ReneeTrei.jpeg");
     $(this).find("a").css("color", "red");
 },
 
 function () {
-    $(this).find("img").attr("src", "Jaanus.png");
+    $(this).find("img").attr("src", "Jaanus.jpg");
     $(this).find("a").css("color", "black");
 });
 
 $("#renee").hover(function () {
-    $(this).find("img").attr("src", "Tanel.png");
+    $(this).find("img").attr("src", "Tanel2.jpg");
     $(this).find("a").css("color", "lawngreen");
 },
 
 function () {
-    $(this).find("img").attr("src", "Renee.png");
+    $(this).find("img").attr("src", "ReneeTrei.jpeg");
     $(this).find("a").css("color", "black");
 });
 
 $("#tanel").hover(function () {
-    $(this).find("img").attr("src", "Jaanus.png");
+    $(this).find("img").attr("src", "Jaanus.jpg");
     $(this).find("a").css("color", "blue");
 },
 
 function () {
-    $(this).find("img").attr("src", "Tanel.png");
+    $(this).find("img").attr("src", "Tanel2.jpg");
     $(this).find("a").css("color", "black");
 });
 </script>
