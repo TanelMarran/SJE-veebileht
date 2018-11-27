@@ -100,7 +100,9 @@ a:link, a:visited {
 
 .img > img {
     float: left;
-    border-radius: 50%
+    border-radius: 50%;
+    border-style: solid;
+    border-color: #353535;
 }
 
 .name {
