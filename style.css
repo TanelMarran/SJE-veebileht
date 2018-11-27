@@ -3,10 +3,25 @@ html, body {
     padding: 0;
     height: 100%;
     width: 100%;
-    background: url("taust.jpg");
-    background-size: cover;
+    /*background: url("vihm.png");/*url("taust.jpg");*/
+    /*background-size: cover;*/
+    /*background-repeat: repeat;*/
+}
 
-
+.Tanel {
+    background: url("vihm.png");/*url("taust.jpg");*/
+    /*background-size: cover;*/
+    background-repeat: repeat;
+}
+.Jaanus {
+    background: url("täht.png");/*url("taust.jpg");*/
+    /*background-size: cover;*/
+    background-repeat: repeat;
+}
+.Renee {
+    background: url("ristikhein.png");/*url("taust.jpg");*/
+    /*background-size: cover;*/
+    background-repeat: repeat;
 }
 
 .main > div {

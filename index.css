@@ -15,7 +15,7 @@ html, body {
     height: 100%;
     width: 100%;
     margin: auto;
-    background: url("taust.jpg");
+    /*background: url("taust.jpg");*/
     display: table;
     top: 0;
     background-size: cover;
