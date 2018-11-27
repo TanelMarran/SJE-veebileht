@@ -15,7 +15,7 @@ html, body {
     height: 100%;
     width: 100%;
     margin: auto;
-    /*background: url("taust.jpg");*/
+    background: url("taust.jpg");
     display: table;
     top: 0;
     background-size: cover;
@@ -55,6 +55,8 @@ a:link, a:visited {
     text-decoration: none;
 }
 
+
+
 .content {
     margin-left: 10vw;
     margin-right: 10vw;
@@ -72,7 +74,7 @@ a:link, a:visited {
     .name {
         height: 10vw;
         width: 15vw;
-        font-size: 3vw;
+        font-size: 4vw;
     }
 }
 
@@ -88,13 +90,14 @@ a:link, a:visited {
     .name {
         height: 30vw;
         width: 75vw;
-        font-size: 10vw;
+        font-size: 11vw;
     }
 }
 .block {
     overflow: auto;
     display: inline-block;
     background-color: rgba(200, 200, 200, 0.6);
+    font-weight: bold;
 
 }
 
