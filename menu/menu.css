@@ -1,7 +1,18 @@
 .navscroll {
-    position: fixed;
+    /*position: fixed;
     width: 100%;
-    height: 10%;
+    height: 10%;*/
+
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    text-align: center;
+    position: fixed;
+    height: 81px;
+    top: 0;
+    right: 1%;
+    left: 1%;
 }
 
 .navmenu {

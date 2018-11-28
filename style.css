@@ -12,6 +12,7 @@ html, body {
     background: url("taustad/vihm.png");/*url("taust.jpg");*/
     /*background-size: cover;*/
     background-repeat: repeat;
+    height: auto;
 }
 .Jaanus {
     background: url("taustad/täht_heledam.png");/*url("taust.jpg");*/
@@ -26,7 +27,7 @@ html, body {
 
 .main > div {
     padding: 30px;
-    padding-top: 100px;
+    padding-top: 50px;
     font-family: Arial;
 }
 
@@ -35,6 +36,8 @@ img {
     border-color: #353535;
     border-style: solid;
     image-rendering: crisp-edges;
+    height: auto;
+    padding: 1;
 }
 
 .main {
