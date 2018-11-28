@@ -37,7 +37,7 @@ img {
     border-style: solid;
     image-rendering: crisp-edges;
     height: auto;
-    padding: 1;
+    margin: 8px;
 }
 
 .main {
