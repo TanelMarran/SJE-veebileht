@@ -40,7 +40,7 @@
 </section>
 <div class="bottom">
     <a href="https://github.com/TanelMarran/SJE-veebileht">
-        <img src="git.gif" href="tanel.html">
+        <img src="git.png">
     </a>
 </div>
 <script>
@@ -73,6 +73,12 @@
             $(this).find("img").attr("src", "Tanel.png");
             $(this).find(".name").css("text-decoration","none")
         });
+
+    $(".bottom").find("a").hover(function () {
+        $(this).find("img").attr("src","git.gif")
+    }, function () {
+        $(this).find("img").attr("src","git.png")
+    })
 </script>
 </body>
 </html>
