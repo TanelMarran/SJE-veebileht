@@ -9,17 +9,17 @@ html, body {
 }
 
 .Tanel {
-    background: url("vihm.png");/*url("taust.jpg");*/
+    background: url("taustad/vihm.png");/*url("taust.jpg");*/
     /*background-size: cover;*/
     background-repeat: repeat;
 }
 .Jaanus {
-    background: url("täht.png");/*url("taust.jpg");*/
+    background: url("taustad/täht_heledam.png");/*url("taust.jpg");*/
     /*background-size: cover;*/
     background-repeat: repeat;
 }
 .Renee {
-    background: url("ristikhein.png");/*url("taust.jpg");*/
+    background: url("taustad/ristikhein.png");/*url("taust.jpg");*/
     /*background-size: cover;*/
     background-repeat: repeat;
 }
