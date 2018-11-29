@@ -8,7 +8,7 @@ html, body {
     padding: 0;
     height: 100%;
     width: 100%;
-    font-family: "AdvancedPixel";
+    font-family: "Arial";
 }
 
 img {
@@ -31,13 +31,6 @@ img {
 
 }
 
-.transbox {
-    background-color: rgba(200, 200, 200, 0.6);
-    margin: auto;
-    width: 75vw;
-
-}
-
 .inner {
     margin: 0 auto;
     text-align: center;
@@ -46,8 +39,7 @@ img {
 }
 
 .bottom a {
-    padding-left: 50%;
-    padding-right: 50%;
+    padding-left: 47%;
 }
 
 .bottom img {
@@ -56,16 +48,16 @@ img {
 }
 
 .inner h1 {
-    color: black;
-    text-shadow: 0 0 300px #000;
-    font-size: 300%;
+    color: #353535;
+    text-shadow: #353535;
+    font-size: 200%;
     horiz-align: center;
     /* border: 1px solid black; */
 
 }
 
 a:link, a:visited {
-    color: black;
+    color: #353535;
     text-decoration: none;
 }
 
@@ -88,7 +80,7 @@ a:link, a:visited {
     .name {
         height: 10vw;
         width: 15vw;
-        font-size: 4vw;
+        font-size: 3vw;
     }
 
     .bottom img {
@@ -98,7 +90,7 @@ a:link, a:visited {
 }
 
 body {
-    background: url("taust.jpg");
+    background: #353535;
     background-size: cover;
 }
 
@@ -120,15 +112,13 @@ body {
 .block {
     overflow: auto;
     display: inline-block;
-    background-color: rgba(200, 200, 200, 0.6);
+    background-color: white;
     font-weight: bold;
-
+    margin-left: -5px;
 }
 
 .img > img {
     float: left;
-    border-radius: 50%;
-    border-style: solid;
     border-color: #353535;
 }
 
