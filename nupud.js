@@ -7,6 +7,12 @@ $(document).ready(function () {
         let cl = this.className;
         $(this).find("img").attr("src","pildid/tanel/"+cl+".png");
     });
+    nup.find("img.suurenda").on("lingid", function () {
+        let hr = this.src
+        console.log(hr)
+        $(this).parent().attr("href",hr)
+    });
+    nup.find("img.suurenda").trigger("lingid");
 
     nup.find("li").click(function () {
         let cl = this.className;

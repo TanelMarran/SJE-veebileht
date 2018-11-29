@@ -31,7 +31,7 @@ html, body {
     font-family: Arial;
 }
 
-p > img {
+p img {
     border-width: 4px;
     border-color: #353535;
     border-style: solid;
@@ -62,4 +62,5 @@ h1 {
 
 p {
     color: #353535;
+    font-size: 23px;
 }
