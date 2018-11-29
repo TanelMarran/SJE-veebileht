@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Landing page</title>
+    <link rel="stylesheet" type="text/css" href="index2.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+<section class="intro">
+    <div class="inner">
+        <div class="transbox">
+            <h1>Tere tulemast meie projektilehele</h1>
+        </div>
+        <div class="content">
+            <a href="jaanus.html">
+                <div class="block" id="jaanus">
+                    <div class="img">
+                        <img src="Jaanus.png"></div>
+                    <div class="name">JAANUS</div>
+                </div>
+            </a>
+            <a href="renee.html">
+                <div class="block" id="renee">
+                    <div class="img">
+                        <img src="Renee.png"></div>
+                    <div class="name">RENEE</div>
+                </div>
+            </a>
+            <a href="tanel.html">
+                <div class="block" id="tanel">
+                    <div class="img">
+                        <img src="pildid/tanel/Tanel.png"></div>
+                    <div class="name">TANEL</div>
+                </div>
+            </a>
+
+        </div>
+    </div>
+</section>
+<div class="bottom">
+    <a href="https://github.com/TanelMarran/SJE-veebileht">
+        <img src="git.png">
+    </a>
+</div>
+<script>
+    $("#jaanus").hover(function () {
+            $(this).find("img").attr("src", "Jaanusvärv.png");
+            $(this).find(".name").css({"text-decoration":"underline","text-decoration-color":"red"})
+        },
+
+        function () {
+            $(this).find("img").attr("src", "Jaanus.png");
+            $(this).find(".name").css("text-decoration","none")
+        });
+
+    $("#renee").hover(function () {
+            $(this).find("img").attr("src", "Reneevärv.png");
+            $(this).find(".name").css({"text-decoration":"underline","text-decoration-color":"lawngreen"})
+        },
+
+        function () {
+            $(this).find("img").attr("src", "Renee.png");
+            $(this).find(".name").css("text-decoration","none")
+        });
+
+    $("#tanel").hover(function () {
+            $(this).find("img").attr("src", "pildid/tanel/Tanelvärv.png");
+            $(this).find(".name").css({"text-decoration":"underline","text-decoration-color":"blue"})
+        },
+
+        function () {
+            $(this).find("img").attr("src", "pildid/tanel/Tanel.png");
+            $(this).find(".name").css("text-decoration","none")
+        });
+
+    $(".bottom").find("a").hover(function () {
+        $(this).find("img").attr("src","git.gif")
+    }, function () {
+        $(this).find("img").attr("src","git.png")
+    })
+</script>
+</body>
+</html>
