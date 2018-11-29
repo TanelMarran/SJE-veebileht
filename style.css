@@ -31,13 +31,16 @@ html, body {
     font-family: Arial;
 }
 
-img {
+p > img {
     border-width: 4px;
     border-color: #353535;
     border-style: solid;
-    image-rendering: crisp-edges;
     height: auto;
     margin: 8px;
+}
+
+img {
+    image-rendering: pixelated;
 }
 
 .main {
@@ -49,6 +52,14 @@ img {
     margin-right: 25%;
 }
 
+.nupud li {
+    display: inline;
+}
+
 h1 {
     text-align: center;
+}
+
+p {
+    color: #353535;
 }
