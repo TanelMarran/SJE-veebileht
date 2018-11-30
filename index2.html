@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>JRT Home</title>
-    <link rel="stylesheet" type="text/css" href="index2.css">
+    <link rel="stylesheet" type="text/css" href="CSS/index2.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
@@ -16,14 +16,14 @@
             <a href="jaanus.html">
                 <div class="block" id="jaanus">
                     <div class="img">
-                        <img src="Jaanus.png"></div>
+                        <img src="pildid/jaanus/Jaanus.png"></div>
                     <div class="name">JAANUS</div>
                 </div>
             </a>
             <a href="renee.html">
                 <div class="block" id="renee">
                     <div class="img">
-                        <img src="Renee.png"></div>
+                        <img src="pildid/renee/Renee.png"></div>
                     <div class="name">RENEE</div>
                 </div>
             </a>
@@ -40,30 +40,30 @@
 </section>
 <div class="bottom">
     <a href="https://github.com/TanelMarran/SJE-veebileht" style="margin-left: 43.5%">
-        <img src="git.png">
+        <img src="pildid/git.png">
     </a>
     <a href="index.html">
-        <img src="swap.png">
+        <img src="pildid/swap.png">
     </a>
 </div>
 <script>
     $("#jaanus").hover(function () {
-            $(this).find("img").attr("src", "Jaanusvärv.png");
+            $(this).find("img").attr("src", "pildid/jaanus/Jaanusvärv.png");
             $(this).find(".name").css({"text-decoration":"underline","text-decoration-color":"red"})
         },
 
         function () {
-            $(this).find("img").attr("src", "Jaanus.png");
+            $(this).find("img").attr("src", "pildid/jaanus/Jaanus.png");
             $(this).find(".name").css("text-decoration","none")
         });
 
     $("#renee").hover(function () {
-            $(this).find("img").attr("src", "Reneevärv.png");
+            $(this).find("img").attr("src", "pildid/renee/Reneevärv.png");
             $(this).find(".name").css({"text-decoration":"underline","text-decoration-color":"lawngreen"})
         },
 
         function () {
-            $(this).find("img").attr("src", "Renee.png");
+            $(this).find("img").attr("src", "pildid/renee/Renee.png");
             $(this).find(".name").css("text-decoration","none")
         });
 

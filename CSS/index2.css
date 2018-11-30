@@ -8,7 +8,7 @@ html, body {
     padding: 0;
     height: 100%;
     width: 100%;
-    font-family: "Arial";
+    font-family: "AdvancedPixel";
 }
 
 img {
@@ -28,6 +28,13 @@ img {
 .intro .inner {
     display: table-cell;
     width: 100%;
+
+}
+
+.transbox {
+    background-color: rgba(200, 200, 200, 0.6);
+    margin: auto;
+    width: 75vw;
 
 }
 
@@ -53,16 +60,16 @@ img {
 }
 
 .inner h1 {
-    color: #353535;
-    text-shadow: #353535;
-    font-size: 200%;
+    color: black;
+    text-shadow: 0 0 300px #000;
+    font-size: 300%;
     horiz-align: center;
     /* border: 1px solid black; */
 
 }
 
 a:link, a:visited {
-    color: #353535;
+    color: black;
     text-decoration: none;
 }
 
@@ -85,7 +92,7 @@ a:link, a:visited {
     .name {
         height: 10vw;
         width: 15vw;
-        font-size: 3vw;
+        font-size: 4vw;
     }
 
     .bottom img {
@@ -95,7 +102,7 @@ a:link, a:visited {
 }
 
 body {
-    background: url(taustad/taust.gif);
+    background: url("../pildid/taust.jpg");
     background-size: cover;
 }
 
@@ -117,13 +124,15 @@ body {
 .block {
     overflow: auto;
     display: inline-block;
-    background-color: white;
+    background-color: rgba(200, 200, 200, 0.6);
     font-weight: bold;
-    margin-left: -5px;
+
 }
 
 .img > img {
     float: left;
+    border-radius: 50%;
+    border-style: solid;
     border-color: #353535;
 }
 

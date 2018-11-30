@@ -9,18 +9,18 @@ html, body {
 }
 
 .Tanel {
-    background: url("taustad/vihm.png");/*url("taust.jpg");*/
+    background: url("../pildid/taustad/vihm.png");/*url("taust.jpg");*/
     /*background-size: cover;*/
     background-repeat: repeat;
     height: auto;
 }
 .Jaanus {
-    background: url("taustad/täht_heledam.png");/*url("taust.jpg");*/
+    background: url("../pildid/taustad/täht_heledam.png");/*url("taust.jpg");*/
     /*background-size: cover;*/
     background-repeat: repeat;
 }
 .Renee {
-    background: url("taustad/ristikhein.png");/*url("taust.jpg");*/
+    background: url("../pildid/taustad/ristikhein.png");/*url("taust.jpg");*/
     /*background-size: cover;*/
     background-repeat: repeat;
 }
