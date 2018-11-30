@@ -16,15 +16,19 @@
     <div class="main" style="font-family: Arial;">
         <div class="sisu">
             <h1>Renee</h1>
-            <p><i>Jack of all trades, master of some. - vanarahvas</i></p><br/>
+            <p><i>Jack of all trades, master of some. - vanarahvas</i></p>
             <p>
-            Olen rahulik Viljandimaalt pärit noormees, kellele meeldib vabal ajal tegeleda peaaegu kõigega. Juhul, kui mind koolist ei leia, tasuks mind otsida<br/>
+            <img id="portree" src="pildid/renee/Reneevärv.png" style="width: 33%; margin-top: 0; float: left">
+            Hei! Olen Renee, Viljandimaalt <a href="https://et.wikipedia.org/wiki/Vanad_ja_kobedad_saavad_jalad_alla" target="_blank">Mustlast</a> pärit aktiivne noor. Peale Tarvastu gümnaasiumi lõpetamist sel suvel alustasin õpinguid Tartu Ülikoolis informaatika erialal.<br/>
+            Hobisid olen endale korjanud aja jooksul omajagu, seetõttu võib mind ka igasugustest erinevatest paikadest leida. Tõenäolisemad kandidaadid oleksid siiski: <br/>
             <ul>
-                <li><a href="#" id="bänd">bändiproovist</a> - <a href="#" onclick="cf();return false;">Õed-Vennad Ristikheinad Vähendatud Koosseisus <sub>(leidke meid Facebookist, Instagramist, Twitterist või Google+'ist)</sub></a>,</li>
+                <li><a href="#" id="bänd">bändiruumist</a> - <a href="#" onclick="cf();return false;">Õed-Vennad Ristikheinad Vähendatud Koosseisus <sub>(leidke meid Facebookist, Instagramist, Twitterist või Google+'ist)</sub></a>,</li>
                 <li><a href="#" id="heli">heli</a>-, valgus- ja/või <a href="#" onclick="lt();return false;" id="video">videopuldi</a> tagant,</li>
                 <li><a href="#" id="käsitöö1">lähimast </a><a href="#" id="käsitöö2">käsitöökojast</a> või</li>
-                <li><a href="#" id="koor">mõnest muust </a><a href="https://www.youtube.com/watch?v=bufMPzaZDYQ" target="_blank">pael</a><a href="#" id="3d">uvast keskkonnast.</a></li>
-            </ul></p>
+                <li><a href="#" id="koor">mõnest </a><a href="#" id="bändikas">muust </a><a href="https://www.youtube.com/watch?v=bufMPzaZDYQ" target="_blank">pael</a><a href="#" id="3d">uvast keskkonnast.</a></li>
+            </ul>
+        <i>Loetelu on interaktiivne - klõpsa ja liigu hiirega julgelt üle linkide ;)</i>
+        </p>
             <!-- <img src="pildid/renee/Reneevärv.png" about="Selline olen mina - võta või jäta."> -->
             <img class="pilt">
             <div class="lower-third-bar">
@@ -91,6 +95,16 @@
         }
    });
 
+    </script>
+    <script>
+        $("#portree").contextmenu(function() {
+            if ($("#portree").attr("src") != "pildid/renee/ReneeTrei.jpeg") {
+                this.src = "pildid/renee/ReneeTrei.jpeg";
+            }
+            else {
+                this.src = "pildid/renee/Reneevärv.png";
+            }
+});
     </script>
     <script>
             $(function() {

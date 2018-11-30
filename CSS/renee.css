@@ -9,12 +9,19 @@
 }
 
 .main a:link, .main a:visited {
-    color: rgb(45, 90, 0);
+    color: rgb(42, 85, 0);
     text-decoration: none;
 }
 
 img {
     width: 100%;
+}
+
+.pilt {
+  position: absolute;
+  right: 20px;
+  bottom: 10px;
+  width: calc(25% - 40px);
 }
 
 .lower-third-bar {
