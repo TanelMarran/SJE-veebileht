@@ -24,6 +24,10 @@ img {
   width: calc(25% - 40px);
 }
 
+.kirjeldus {
+  display: none;
+}
+
 .lower-third-bar {
   font-family: 'AdvancedPixel';
   position: absolute;

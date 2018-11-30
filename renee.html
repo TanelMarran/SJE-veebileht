@@ -29,6 +29,21 @@
             </ul>
         <i>Loetelu on interaktiivne - klõpsa ja liigu hiirega julgelt üle linkide ;)</i>
         </p>
+        <p>Kõige muu kõrval olen ka pikemat aega tegelenud programmeerimisega, mis on olnud ühendavaks lüliks erinevate huvide vahel. Mõned näited:</p>
+        <div class="keel">
+                <h3 class="keelenimi">Javascript</h3>
+                <div class="kirjeldus">Javascripti ja NodeJS koosmõjul toimib vabavaraline ülekatete lahendus NodeCG, millele olen loonud videoülekannete tegemiseks erinevaid mooduleid.<br/>
+                Samuti olen välja töötanud erinevaid brauseripõhiseid <i>snippeteid</i> igapäevaelu lihtsustamiseks.</div>
+              </div>
+            <div class="keel">
+                <h3 class="keelenimi">Python</h3>
+                <div class="kirjeldus">Python on olnud minu jaoks universaalne tööriist kiirete ülesannete lahendamiseks. Nii olen vastuseid saanud mitmetele matemaatilistele küsimustele, alates hüpoteeside kontrollimisest kuni muttide püüdimiseni.<br/>
+                Lisaks olen ma Pythoniga teinud nii mänge kui ka mängulisi utiliite elu ilu väljatoomiseks.</div>
+            </div>
+            <div class="keel">
+                <h3 class="keelenimi">C#</h3>
+                <div class="kirjeldus">C# oli üks esimese programmeerimiskeeli, millega ma ennast kurssi viisin, eelkõige just suunava ja abivalmi tutvusringkonna abil. Selle abil olen loonud mõned rakendused nii arvutitele kui ka mobiilidele (UWP platvorm), suurim neist oli Telia MinuTV API-le toetuv telekavarakendus (ajal, mis alternatiivid rakenduse näol olid puudulikud).</div>
+            </div>
             <!-- <img src="pildid/renee/Reneevärv.png" about="Selline olen mina - võta või jäta."> -->
             <img class="pilt">
             <div class="lower-third-bar">
@@ -105,6 +120,16 @@
                 this.src = "pildid/renee/Reneevärv.png";
             }
 });
+    </script>
+    <script>
+        $(function () {
+            $('.keelenimi').click(function () {
+                $(this).next('div').slideToggle();
+                
+                $(this).parent().siblings().children().next().slideUp();
+                return false;
+            });
+        });
     </script>
     <script>
             $(function() {
