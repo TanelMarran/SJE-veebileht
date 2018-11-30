@@ -12,7 +12,10 @@
     color: rgb(42, 85, 0);
     text-decoration: none;
 }
-
+h3 {
+  text-align: center;
+  color: rgb(42, 85, 0);
+}
 img {
     width: 100%;
 }

@@ -1,7 +1,7 @@
 html, body {
     margin: auto;
     padding: 0;
-    height: 100%;
+    height: auto;
     width: 100%;
     /*background: url("vihm.png");/*url("taust.jpg");*/
     /*background-size: cover;*/
