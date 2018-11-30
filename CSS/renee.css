@@ -1,11 +1,11 @@
 @font-face {
     font-family: AdvancedPixel;
-    src: url(advanced_pixel-7.woff);
+    src: url(CSS/advanced_pixel-7.woff);
 }
 
 @font-face {
     font-family: Ristik;
-    src: url(ristik.woff);
+    src: url(CSS/ristik.woff);
 }
 
 .main a:link, .main a:visited {
