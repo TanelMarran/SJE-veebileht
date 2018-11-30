@@ -43,7 +43,7 @@
         <img src="git.png">
     </a>
     <a href="index.html">
-        <img src="git.png">
+        <img src="swap.png">
     </a>
 </div>
 <script>
@@ -77,10 +77,12 @@
             $(this).find(".name").css("text-decoration","none")
         });
 
-    $(".bottom").find("a").hover(function () {
-        $(this).find("img").attr("src","git.gif")
+    $(".bottom").find("a").find("img").hover(function () {
+        let cl = this.src;
+        $(this).attr("src",cl.replace(".png",".gif"))
     }, function () {
-        $(this).find("img").attr("src","git.png")
+        let cl = this.src;
+        $(this).attr("src",cl.replace(".gif",".png"))
     })
 </script>
 </body>
