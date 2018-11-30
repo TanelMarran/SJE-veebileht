@@ -18,15 +18,15 @@
             <h1>Renee</h1>
             <p><i>Jack of all trades, master of some. - vanarahvas</i></p><br/>
             <p>
-            Rahulik Viljandimaalt pärit noormees, kellele meeldib vabal ajal tegeleda peaaegu kõigega. Kui teda ei leia koolist, tasuks teda otsida<br/>
+            Olen rahulik Viljandimaalt pärit noormees, kellele meeldib vabal ajal tegeleda peaaegu kõigega. Juhul, kui mind koolist ei leia, tasuks mind otsida<br/>
             <ul>
                 <li><a href="#" id="bänd">bändiproovist</a> - <a href="#" onclick="cf();return false;">Õed-Vennad Ristikheinad Vähendatud Koosseisus <sub>(leidke meid Facebookist, Instagramist, Twitterist või Google+'ist)</sub></a>,</li>
                 <li><a href="#" id="heli">heli</a>-, valgus- ja/või <a href="#" onclick="lt();return false;" id="video">videopuldi</a> tagant,</li>
-                <li>lähimast käsitöökojast või</li>
-                <li>mõnest muust <a href="https://www.youtube.com/watch?v=bufMPzaZDYQ" target="_blank">pael</a>uvast keskkonnast.</li>
+                <li><a href="#" id="käsitöö1">lähimast </a><a href="#" id="käsitöö2">käsitöökojast</a> või</li>
+                <li><a href="#" id="koor">mõnest muust </a><a href="https://www.youtube.com/watch?v=bufMPzaZDYQ" target="_blank">pael</a><a href="#" id="3d">uvast keskkonnast.</a></li>
             </ul></p>
             <!-- <img src="pildid/renee/Reneevärv.png" about="Selline olen mina - võta või jäta."> -->
-            <img src="pildid/renee/Reneevärv.png" class="pilt">
+            <img class="pilt">
             <div class="lower-third-bar">
                 <div class="logo"></div>
                 <div class="logo_bg"></div>
@@ -75,17 +75,20 @@
             }
         }
 
-        $(".sisu li a").hover(function(){
+        $(".sisu li a").mouseenter(function(){
             var ID = this.id;                       // get anchor ID
             if (ID) {
+                if ($(".pilt").attr("src") != "pildid/renee/"+ ID +".jpg") {
                 $(".pilt").stop().fadeOut(400, function() {
-          this.src = "pildid/renee/"+ ID +".jpg";
+        
+            this.src = "pildid/renee/"+ ID +".jpg";
           this.onload = function(){           // make sure img is loaded
              $(this).fadeIn(400);             // fadeIn
           };
+        
       });
             }
-
+        }
    });
 
     </script>
