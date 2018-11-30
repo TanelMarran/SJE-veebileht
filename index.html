@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Landing page</title>
+    <title>JRT Home</title>
     <link rel="stylesheet" type="text/css" href="index.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
@@ -39,8 +39,11 @@
     </div>
 </section>
 <div class="bottom">
-    <a href="https://github.com/TanelMarran/SJE-veebileht">
+    <a href="https://github.com/TanelMarran/SJE-veebileht" style="margin-left: 43.5%">
         <img src="git.png">
+    </a>
+    <a href="index2.html">
+        <img src="swap.png">
     </a>
 </div>
 <script>
@@ -74,10 +77,12 @@
             $(this).find(".name").css("text-decoration","none")
         });
 
-    $(".bottom").find("a").hover(function () {
-        $(this).find("img").attr("src","git.gif")
+    $(".bottom").find("a").find("img").hover(function () {
+        let cl = this.src;
+        $(this).attr("src",cl.replace(".png",".gif"))
     }, function () {
-        $(this).find("img").attr("src","git.png")
+        let cl = this.src;
+        $(this).attr("src",cl.replace(".gif",".png"))
     })
 </script>
 </body>

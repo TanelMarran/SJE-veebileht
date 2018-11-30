@@ -38,8 +38,13 @@ img {
 
 }
 
+.bottom {
+    display: block;
+}
 .bottom a {
-    padding-left: 47%;
+    display: inline;
+    padding: 4px;
+    text-align: center;
 }
 
 .bottom img {
@@ -90,7 +95,7 @@ a:link, a:visited {
 }
 
 body {
-    background: #353535;
+    background: url(taustad/taust.gif);
     background-size: cover;
 }
 
