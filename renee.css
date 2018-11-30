@@ -1,0 +1,88 @@
+@font-face {
+    font-family: AdvancedPixel;
+    src: url(advanced_pixel-7.woff);
+}
+
+@font-face {
+    font-family: Ristik;
+    src: url(ristik.woff);
+}
+
+a:link, a:visited {
+    color: rgb(45, 90, 0);
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+}
+
+.lower-third-bar {
+  font-family: 'AdvancedPixel';
+  position: absolute;
+  top: calc(100% - 150px);
+  height: 120px;
+  width: calc(100% - 90px);
+  left: 30px;
+}
+
+.logo {
+  position: absolute;
+  float: left;
+  height: 120px;
+  width: 120px;
+  background-image: url("pildid/renee/Renee_tp.png");
+  background-repeat:no-repeat;
+  background-size:contain;
+  opacity: 0;
+
+}
+
+.logo_bg {
+  float: left;
+  height: 120px;
+  /* width: 120px; */
+  width: 0;
+
+
+  /* background: #868992; */
+  /* background: #ffcb00; */
+  background: rgb(45, 90, 0);
+  -webkit-transition: 1s; /* For Safari 3.1 to 6.0 */
+  transition: 1s;
+}
+
+.headline-title {
+  position: absolute;
+  top: 0;
+  height: 80px;
+  /* height: 120px; ajutine fix pika teksti jaoks */
+  /* width: 1460px; */
+  width: 0;
+  left: 120px;
+  background: white;
+}
+.title-label {
+  display: inline-block;
+    margin: 20px 0 0px 25px;
+    font-size: 50px;
+    opacity: 0;
+}
+
+
+.headline-subtitle {
+  position: absolute;
+  top: 80px;
+  /* height: 40px; */
+  height: 0;
+  width: calc(100% - 90px);
+  left: 120px;
+  background: #DDD;
+}
+
+.subtitle-label {
+  display: inline-block;
+  margin: 5px 0 0px 25px;
+  font-size: 25px;
+  opacity: 0;
+}

@@ -7,24 +7,89 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" href="CSS/menu.css">
 
+    <link rel="stylesheet" href="menu/menu.css">
+    <link rel="stylesheet" href="renee.css">
+    <script src="lib/zepto.min.js"></script>
+    <script src="lib/velocity.min.js"></script>
+    <script src="lib/velocity.ui.min.js"></script>
 </head>
 <body class="Renee">
     <div id="navigator"></div>
-    <div class="main">
-        <div>
+    <div class="main" style="font-family: Arial;">
+        <div class="sisu">
             <h1>Renee</h1>
             <p><i>Jack of all trades, master of some. - vanarahvas</i></p></br/>
             Rahulik Viljandimaalt pärit noormees, kellele meeldib vabal ajal tegeleda peaaegu kõigega. Kui teda ei leia koolist, tasuks teda otsida<br/>
             <ul>
-                <li>bändiproovist - <a href="http://ristikheinad.eu">Õed-Vennad Ristikheinad Vähendatud Koosseisus <sub>(leidke meid Facebookist, Instagramist, Twitterist või Google+'ist)</sub></a>,</li>
-                <li>heli-, valgus- ja/või videopuldi tagant,</li>
+                <li><a href="#" id="bänd">bändiproovist</a> - <a href="#" onclick="cf();return false;">Õed-Vennad Ristikheinad Vähendatud Koosseisus <sub>(leidke meid Facebookist, Instagramist, Twitterist või Google+'ist)</sub></a>,</li>
+                <li><a href="#" id="heli">heli</a>-, valgus- ja/või <a href="#" onclick="lt();return false;" id="video">videopuldi</a> tagant,</li>
                 <li>lähimast käsitöökojast või</li>
-                <li>mõnest muust paeluvast keskkonnast.</li>
+                <li>mõnest muust <a href="https://www.youtube.com/watch?v=bufMPzaZDYQ" target="_blank">pael</a>uvast keskkonnast.</li>
             </ul></p>
             <img src="pildid/renee/Reneevärv.png" about="Selline olen mina - võta või jäta.">
+            <img src="Reneevärv.png" class="pilt">
+            <div class="lower-third-bar">
+                <div class="logo"></div>
+                <div class="logo_bg"></div>
+                <div class="headline-title"><label id="titleElement" class="title-label">Tervitusi CG-maailmast!</label></div>
+                <div class="headline-subtitle"><label id="subtitleElement" class="subtitle-label">Jätab ju peaaegu televisiooni mulje, eksju? ;)</label></div>
+            </div>
         </div>
     </div>
+    <script>
+    var inSequence = [
+        { e: $('.logo'), p: { opacity: 1 }, o: { duration: 500, easing: "ease-in" } },
+        { e: $('.logo_bg'), p: { width: 120 }, o: { duration: 500, easing: "ease-in" } },
+        { e: $('.headline-title'), p: { width: $(".headline-subtitle").width() }, o: { duration: 1000, easing: "ease-in" } },
+        { e: $('.title-label'), p: { opacity: 1 }, o: { duration: 500, easing: "ease-in"} },
+        { e: $('.headline-subtitle'), p: { height: 40 }, o: { duration: 1500, easing: "ease-in" } },
+        {
+            e: $('.subtitle-label'), p: { opacity: 1 }, o: {
+            duration: 500, easing: "ease-in",
+            complete: function () {
+                setTimeout(function () {
+                    $.Velocity.RunSequence(outSequence);
+                }, 3000);
+            }
+            }
+        }
+        ];
 
+        var outSequence = [
+        { e: $('.subtitle-label'), p: { opacity: 0 }, o: { duration: 500, easing: "ease-out" } },
+        { e: $('.headline-subtitle'), p: { height: 0 }, o: { duration: 1500, easing: "ease-out", } },
+        { e: $('.title-label'), p: { opacity: 0 }, o: { duration: 500, easing: "ease-out"} },
+        { e: $('.headline-title'), p: { width: 0 }, o: { duration: 1000, easing: "ease-out" } },
+        { e: $('.logo_bg'), p: { width: 0 }, o: { duration: 500, easing: "ease-out" } },
+        { e: $('.logo'), p: { opacity: 0 }, o: { duration: 500, easing: "ease-out" } }
+        ];
+        function lt() {
+            $.Velocity.RunSequence(inSequence);
+        }
+        function cf() {
+            if ($('.sisu').css("font-family") == "Arial") {
+                $('.sisu').css("font-family", "Ristik")
+            }
+            else {
+                $('.sisu').css("font-family", "Arial");
+                window.open('http://ristikheinad.eu/', '_blank')
+            }
+        }
+
+        $(".sisu li a").hover(function(){
+            var ID = this.id;                       // get anchor ID
+            if (ID) {
+                $(".pilt").stop().fadeOut(400, function() {
+          this.src = "pildid/renee/"+ ID +".jpg";
+          this.onload = function(){           // make sure img is loaded
+             $(this).fadeIn(400);             // fadeIn
+          };
+      });
+            }
+
+   });
+
+    </script>
     <script>
             $(function() {
                 $("#navigator").load("menu/menu.html")
