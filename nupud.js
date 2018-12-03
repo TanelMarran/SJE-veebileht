@@ -14,6 +14,7 @@ $(document).ready(function () {
     });
     nup.find("img.suurenda").trigger("lingid");
 
+
     nup.find("li").click(function () {
         let cl = this.className;
         nup.find("p").hide();
