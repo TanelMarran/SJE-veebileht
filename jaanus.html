@@ -6,21 +6,79 @@
     <link rel="stylesheet" href="CSS/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" href="CSS/menu.css">
+    <link rel="stylesheet" href="CSS/jaanus.css">
 </head>
 <body class="Jaanus">
+    <div class="main" style="padding: 0px;word-wrap: break-word">
     <div id="navigator"></div>
-    <div class="main">
-        <div>
-            <img src="pildid/jaanus/Jaanus.gif" style="margin: auto; display: block; border-style: none; width:50%; height:auto; padding-bottom: 32px">
-            <p>Mina olen jaanus</p>
-            <a href="index2.html">Indeks</a>
-        </div>
-    </div>
+    <img src="pildid/jaanus/Jaanus.gif" style="margin: auto; display: block; border-style: none; width:50%; height:auto; padding-bottom: 32px">
 
+        <img src="pildid/jaanus/mina.jpg" style="width:50%; margin-left: 25%; padding:1px; border:1px solid #021a40; background-color: red; margin-bottom: 10%">
+        <p>Minu nimi on Jaanus. Olen pärit Võrust. Hetkel elan Tartus ja õpin Tartu Ülikoolis informaatikat
+        1. kursusel. Põhikooli lõpetasin Parksepa Keskkooli, edasi läksin õppima Tartu Kutsehariduskeskusesse Tarkvara ja andmebaaside haldust.
+        Sealt omandasin noorem IT-spetsialisti kutsetunnistuse. Edasi läksin ma kaheks aastaks Austraaliasse elama/töötama.
+        Peale Austraaliat liikusin edasi aastaks Inglismaale. Peale Inglismaad otsustasin tagasi koju tulla ja siin ma nüüd olen</p>
+        <div class="nupudjaanus" style="padding-left: 20%">
+            <ul style="list-style-type: none; padding-left: 20%; margin: 0 20px 0 20px">
+                <li><button onclick="muuda('Minu elu')" value="Minu Elu">Minu elu</button></li>
+                <li><button onclick="muuda('Sport')" value="Sport">Sport</button></li>
+                <li><button onclick="muuda('Kontakt')" value="Kontakt">Kontakt</button></li>
+            </ul>
+        </div>
+
+
+        <div id="Sisu" style="padding: 0px"></div>
+
+
+        <div id="CV" style="display: none">
+            <h2>Minu CV</h2>
+        </div>
+        <div id="Minu elu" style="display: none">
+            <p>
+                Olen sündinud Võrus, kasvanud Võrus ja seal on mu vanematekodu. Käisin Parksepa lasteaias ja astusin peale
+                seda Parksepa Keskkooli. Käisin seal kuni 10nda klassini, aga siis otsustasin, et tahan hoopis kutset õppida.
+                Peale 10ndat klassi läksin Tartu Kutsehariduskeskusesse õppima Tarkvara ja andmebaaside haldust. Kutsekoolis
+                omandasin noorem informaatiku 3. taseme kutsetunnistuse. Peale kooli lõpetamist läksin sel samal suvel
+                Austraaliasse. Austraalias veetsin 2 aastat töötades enamus aega erinevates kaevandustes. Elu seal oli väga
+                positiivne kogemus, sain hulgaliselt toredaid mälestusi. Sellele järgenevalt olin mõned kuud Eestis ja peale
+                seda läksin edasi Inglismaale, kus ma töötasin aasta. Sarnaselt Austraaliale meeldis mulle elu ka Inglismaal.
+                Lõpuks otsustasin tulla tagasi kodumaale. Olles Eestis asusin tööle venna juurde graanulitehasesse ja olin
+                seal mõnda aega. Üks moment sain aru, et tahan siiski jätkata enda IT kutsumust. Sel sügisel astusin Tartu
+                Ülikooli, kus ma nüüd õpin 1. kursusel. Elu parim otsus.
+            </p>
+        </div>
+        <div id="Sport" style="display: none">
+            <p>
+                Olen spordiga tegelenud kogu oma elu. Noorena alustasin judoga, kus ma käisin umbes 4 aastat.
+                Peale seda otsustasin minna karate trenni, kus käisin samuti 4 aastat. Ning võitluskunstidest olen veel
+                tegelenud kickboxiga umbes aasta. Nooremana Võrus elades tegelesin iga suvi amatöörtasemel jalgpalliga
+                mängides väravavahi positsiooni. Välismaal hakkasin rohkem tegelema jalgrattaspordi ja jooksmisega.
+                Jalgrattaspordiga ja jooksmisega tegelen siiamaani. Sõidan maantee- ja hübriidratast. Iga suvi võtan osa
+                Võru pikkamaajooksu sarjast. See sari ongi 1 peamine põhjus, miks ma jooksmas käin, kuna see jooksusari
+                on lihtsalt nii motiveeriv ja jooksud on väga lahedad.
+            </p>
+        </div>
+        <div id="Kontakt" style="display: none;">
+            <h2 style="padding-left: 3%">Telefon:</h2><p>555555555</p>
+            <h2 style="padding-left: 3%">Email:</h2><p> jaanusraudsik@gmail.com</p>
+            <h2 style="padding-left: 3%">Facebook:</h2><p>https://www.facebook.com/jaanus.raudsik</p>
+
+        </div>
+
+    </div>
     <script>
         $(function() {
             $("#navigator").load("menu/menu.html")
         })
     </script>
+    <script>
+        function muuda(value) {
+            var text = document.getElementById(value).innerHTML;
+            document.getElementById("Sisu").innerHTML = text;
+
+        }
+    </script>
+
+
 </body>
 </html>
